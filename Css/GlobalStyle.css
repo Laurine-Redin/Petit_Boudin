@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Mali|Varela&display=swap');
+
+html
+{
+	margin: 2%;
+	border: 10px double #149975;
+	background-color: #eee;
+}
+
+img
+{
+	display: inline-block;
+	position: 
+	z-index: -1;
+	width:5%;
+  	height:5%;
+	margin-top:2%;
+}
+
+body
+{
+	text-align: center;
+}
+
+h1
+{
+	font-size: 3em;
+	font-family: Mali;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 3%;
+	color: #149975;
+	text-shadow: 4px 3px 0px #454545;
+	z-index: 1;
+}
