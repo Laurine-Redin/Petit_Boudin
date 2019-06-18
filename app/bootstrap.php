@@ -19,7 +19,7 @@ use model\finder\Messagefinder;
 $container = new ServiceContainer();
 $app = new App($container);
 
-$app->setService('database', new DataBase("127.0.0.1", "mes_boudins", "root", "", "3306"));
+$app->setService('database', new DataBase(getenv('MYSQL_ADDON_HOST'), getenv('MYSQL_ADDON_DB'), getenv('MYSQL_ADDON_USER'), getenv('MYSQL_ADDON_PASSWORD'),getenv('MYSQL_ADDON_PORT') ));
 
 $app->setService('profileFinder', new ProfileFinder($app));
 $app->setService('messageFinder', new MessageFinder($app));
